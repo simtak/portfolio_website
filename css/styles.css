@@ -3,9 +3,10 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #330906;
-  --tertiary-color: #f0ffff;
-  --fourth-color: #4aa9a4;
-  --fifth-color: ;
+  --tertiary-color: #f6c569;
+  --fourth-color: #cf7f16;
+  --link-color: #18b0e7;
+  --button-color: #330906;
 }
 
 * {
@@ -39,8 +40,8 @@ button,
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--fourth-color);
+  color: var(--button-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -53,7 +54,8 @@ button:focus,
 .button:hover,
 .button:active {
   cursor: pointer;
-  opacity: 0.8;
+
+  color: var(--button-color);
 }
 /* link styling */
 a {
@@ -62,13 +64,13 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: var(--button-color);
   text-decoration: none;
 }
 a:hover,
 a:focus {
   text-decoration: underline;
-  color: var(--fourth-color);
+  color: var(--link-color);
 }
 a:active {
   color: var(--secondary-color);
@@ -183,10 +185,6 @@ a:active {
   text-align: center;
 }
 
-.contact-form-container {
-  text-align: center;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -201,10 +199,15 @@ a:active {
   border-radius: 5px;
 }
 .contact-form-container {
+  text-align: center;
   padding: 8px;
   background-color: var(--fourth-color);
   border-radius: 3px;
   box-shadow: 1px 1px 1px 1px rgb(67, 65, 65);
+}
+
+.contact-form-container:hover {
+  color: var(--button-color);
 }
 
 /* grid styling */
