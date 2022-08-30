@@ -111,7 +111,7 @@ a:active {
   height: 250px;
   margin-right: 40px;
   border-radius: 50%;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .profile {
@@ -183,7 +183,12 @@ a:active {
 }
 
 #footer-container {
-  min-width: 100px;
+  min-width: 107px;
+  display: flex;
+}
+
+.footer-icons a + a {
+  margin-left: 10px;
 }
 
 .contact-infos-container {
