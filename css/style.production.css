@@ -265,6 +265,10 @@ a:active {
   align-items: center;
 }
 
+#footer-container {
+  min-width: 100px;
+}
+
 .contact-infos-container {
   text-align: center;
 }
